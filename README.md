@@ -63,5 +63,14 @@ GitHub Pages: https://VexelON.github.io/kr1-html-css-shop/
 - базовая JS-обработка формы;
 - сообщение об успешной отправке.
 
+## Структура проекта
 
+- `index.html` – главная страница;
+- `catalog.html` – каталог товаров;
+- `contacts.html` – контактная информация;
+- `css/style.css` – файл стилей;
+- `js/main.js` – файл JavaScript;
+- `images/` – папка для изображений;
+- `README.md` – описание проекта;
+- `.gitignore` – список исключений.
 
