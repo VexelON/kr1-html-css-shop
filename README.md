@@ -8,17 +8,20 @@
 Создана базовая структура проекта.
 
 ## Структура
-- `index.html` — главная страница
-- `css/style.css` — стили
-- `images/` — изображения
-- `.gitignore` — исключения
-- `README.md` — описание
+- `index.html` - главная страница
+- `css/style.css` - стили
+- `images/` - изображения
+- `.gitignore` - исключения
+- `README.md` - описание
 
 ## Технологии
 - HTML
 - CSS
 - Git
 - GitHub
+
+## Ссылка на опубликованный проект
+GitHub Pages: https://VexelON.github.io/kr1-html-css-shop/
 
 ## Автор
 ФИО: Косатый Н В
