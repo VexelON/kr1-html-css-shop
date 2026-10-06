@@ -115,6 +115,37 @@ a:focus-visible {
 
 
 /* ===================================
+   3.1. Хлебные крошки и якоря
+   =================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+:target {
+    outline: 2px dashed var(--color-primary);
+    outline-offset: 4px;
+}
+
+.breadcrumbs {
+    max-width: var(--container-width);
+    margin: 0 auto var(--space-md);
+    font-size: 14px;
+    color: var(--color-muted);
+}
+
+.breadcrumbs a {
+    color: var(--color-primary);
+}
+
+.breadcrumbs span::before {
+    content: " / ";
+    color: var(--color-muted);
+}
+
+
+
+
+/* ===================================
    4. Компоненты страницы
    =================================== */
 
