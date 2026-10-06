@@ -134,6 +134,9 @@ a:focus-visible {
 /* Шапка */
 .site-header {
     background-color: var(--color-surface);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .site-header__inner {
@@ -224,13 +227,19 @@ a:focus-visible {
     flex-direction: column;
     gap: var(--space-sm);
     padding: var(--space-md);
+    position: relative;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     background-color: var(--color-bg);
+    
 }
 
 .product-card:hover {
     border-color: var(--color-primary);
+}
+
+.product-card--discount {
+    border-color: var(--color-danger);
 }
 
 .product-card__title {
@@ -405,4 +414,59 @@ a:focus-visible {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
     font: inherit;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.product-table {
+    width: 100%;
+    min-width: 400px;
+    border-collapse: collapse;
+}
+
+.product-table caption {
+    margin-bottom: var(--space-sm);
+    font-weight: 700;
+    text-align: left;
+}
+
+.product-table th,
+.product-table td {
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--color-border);
+    text-align: left;
+}
+
+.product-table thead th {
+    background-color: var(--color-surface);
+}
+
+
+
+
+
+.product-card {
+    position: relative;
+    /* остальные свойства уже есть */
+}
+
+.product-card__badge {
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    padding: 4px 8px;
+    color: var(--color-white);
+    background-color: var(--color-danger);
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    z-index: 1;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
